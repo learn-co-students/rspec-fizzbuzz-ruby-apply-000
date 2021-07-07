@@ -1,5 +1,19 @@
 require_relative './spec_helper.rb'
-# We are missing a 'require_relative' here. Check README.md for instructions and an explanation! 
+# We are missing a 'require_relative' here. Check README.md for instructions and an explanation!
+
+
+def fizzbuzz(number)
+if number % 3 == 0 && number % 5 == 0
+"FizzBuzz"
+elsif number % 5 == 0
+"Buzz"
+elsif number % 3 == 0
+"Fizz"
+else
+puts nil
+end
+end
+
 
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
